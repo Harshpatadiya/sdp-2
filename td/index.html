@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>To-do List</title>
+</head>
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+        </div>
+
+        <header>
+            <h1>TO Do List</h1>
+        </header>
+
+     <!-- Add Todo -->
+     <form action="" id="todo-form"> 
+          <p>Add Your Task Here</p> 
+            <div class="form-control">    
+                <input type="text" id="todo-input" placeholder="Type here about your next task">   
+                    <button type="submit">       
+                        <i class="fa fa-plus"></i>  
+                    </button>  
+            </div>               
+    </form>
+
+     <!-- edit Todo -->
+     <form action="" id="edit-form" class="hide"> 
+        <p>Add Your Task Here</p> 
+          <div class="form-control">    
+              <input type="text" id="edit-input" placeholder="Type here about your next task">   
+                  <button type="submit">       
+                    <i class="fa fa-check" aria-hidden="true"></i> 
+                  </button>  
+          </div>             
+          <button type="button" class="cancel-edit-btn">Cancel</button>  
+  </form>
+        <!-- task list -->
+        <div class="todo-list" id= "to-list">
+        
+            <div class="todo">
+                <h3>some default task</h3>
+                <button class="finish-todo">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
